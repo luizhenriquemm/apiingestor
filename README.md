@@ -16,10 +16,13 @@ my_ingestor = Ingestor(
 ```
 
 When initializing the object, some parameters must be passed:
-  - api_name:str=None (Required)
+> api_name:str=None (Required)
+
 Enter the API name here along with the name of the endpoint to be ingested. This name is passed on to the name of the files saved on the landing during the process.
-  - url:str=None (Required)
+> url:str=None (Required)
+
 Enter the URL of the endpoint to be ingested here.
-  - method:str=None (Required)
+> method:str=None (Required)
+
 The method for endpoint requests. Methods available in the latest version: GET and POST.
 After the object is instantiated, some other settings can be set as follows.
