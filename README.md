@@ -256,3 +256,23 @@ The Ingestor is prepared to deal with some errors that requests may receive, the
   - HTTP 529: Server is overloaded
 
 For any of these errors, the Ingestor will try the request again after 1 minute of waiting. If an error occurs for 10 consecutive times, the script will not try new requests and invoke an error on the received error.
+
+## Extra
+
+### Undo
+
+If the library is running in a development environment, it is possible to undo the work done by the Ingestor:
+
+```python
+my_ingestor.undo()
+```
+
+After executing the above function, all the files that the script saved in the configured folder will be deleted and the job will be undone.
+
+### Logging
+
+The Ingestor generates logs during its execution, this log can be done via logging or via print. The loggin method is the default, but in case you need to change the log form:
+
+```python
+my_ingestor.set_log_method("print")
+```
