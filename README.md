@@ -16,7 +16,8 @@ my_ingestor = Ingestor(
 ```
 
 When initializing the object, some parameters must be passed:
-    api_name:str=None (Required)
+
+  api_name:str=None (Required)
 
 > Enter the API name here along with the name of the endpoint to be ingested. This name is passed on to the name of the files saved on the landing during the process.
 
